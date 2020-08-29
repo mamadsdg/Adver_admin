@@ -227,6 +227,8 @@ public class MainActivity extends AppCompatActivity implements FingerprintHandle
             err_text.setVisibility(View.VISIBLE);
         }
 
+        //new line test github
+
     }
 
 }
