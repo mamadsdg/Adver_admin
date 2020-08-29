@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/card_background"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_user_ic"
+            android:id="@+id/profile_image"
+            android:layout_margin="@dimen/_5sdp"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محمد صدیقی مورنانمی"
+            android:textColor="@color/red1"
+            android:textSize="@dimen/_18sdp"
+            android:layout_toLeftOf="@id/profile_image"
+            android:layout_marginRight="@dimen/_3sdp"/>
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_9sdp"
+            android:layout_toLeftOf="@id/profile_image"
+            android:text="شماره تلفن:"
+            android:layout_below="@id/user_name"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textColor="@color/color1"/>
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_9sdp"
+            android:layout_toLeftOf="@id/txt1"
+            android:text="09138684522"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_below="@id/user_name"
+            android:layout_marginRight="@dimen/_6sdp" />
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:text="تعداد مرخصی ها در این ماه:"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/request_in_mounth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:text="2"
+            android:layout_toLeftOf="@id/txt3"
+            android:layout_marginRight="@dimen/_5sdp"/>
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:text="روز های فعالیت در این ماه:"
+            android:layout_toLeftOf="@id/request_in_mounth"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_30sdp"/>
+        <TextView
+            android:id="@+id/number_of_requests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:text="31"
+            android:layout_toLeftOf="@id/txt4"
+            android:layout_marginRight="@dimen/_5sdp"/>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.activitys.MainActivity"
+    android:padding="25dp"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim_login" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:hint="شماره تلفن"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:gravity="right"
+            android:id="@+id/email_ed"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:hint="رمز کاربری"
+        app:hintAnimationEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_ed"
+            android:gravity="right"
+            android:inputType="textPassword"
+            android:textSize="14dp"
+            android:fontFamily="@font/vazir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/btn_enter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background2"
+        android:text="ورود"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+    <ImageButton
+        android:id="@+id/finger_icon"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@color/white"
+        android:src="@drawable/ic_finger_icon"/>
+
+
+
+</LinearLayout>

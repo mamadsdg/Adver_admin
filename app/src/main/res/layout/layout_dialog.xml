@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_15sdp"
+    android:background="@color/realWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:text="لطفا انگشت خود را بر روی حسگر اثر انگشت قرار دهید"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:padding="@dimen/_7sdp"/>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/fingerprintn"
+            app:lottie_speed="2.5"
+            android:id="@+id/anim_fingerprint"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_state"
+        android:text="تست"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/red1"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/go_down"
+            app:lottie_speed="2.5"
+            android:id="@+id/go_down"/>
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/res_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عدم تایید"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_40sdp"/>-->
+
+
+</LinearLayout>
